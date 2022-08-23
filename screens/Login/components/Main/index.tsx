@@ -27,13 +27,13 @@ export default function Main( props:any ) {
             <TouchableOpacity onPress={()=> {
                 efetuarLogin(usuario,senha)
             }} style={styles.btnTlLogin}>
-                <MaterialCommunityIcons name="login" size={24} color="black"/>
-                <Text> Login </Text>
+                <MaterialCommunityIcons name="login" size={24} color="white"/>
+                <Text style={styles.txtBtnLogin}> Login </Text>
             </TouchableOpacity>
 
             <TouchableOpacity onPress={()=> props.acao.navigate("Cadastro")} style={styles.btnTlCadastrar}>
-                <Feather name="user-plus" size={24} color="black" />
-                <Text> Cadastro </Text>
+                <Feather name="user-plus" size={24} color="white" />
+                <Text style={styles.txtBtnCadastro}> Cadastro </Text>
             </TouchableOpacity>
         </View>
     )

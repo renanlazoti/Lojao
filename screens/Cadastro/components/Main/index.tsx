@@ -26,8 +26,8 @@ export default function Main() {
                 <TouchableOpacity onPress={() => {
                     efetuarCadastro(nome,email,cpf,usuario,senha)
                 }} style={styles.btnTcCadastrar} >
-                    <FontAwesome name="save" size={24} color="black" />
-                    <Text> Cadastrar </Text>
+                    <FontAwesome name="save" size={24} color="white" />
+                    <Text style={styles.txtBtnCadastro}> Cadastrar </Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>
